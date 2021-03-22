@@ -1,1 +1,5 @@
 theme: jekyll-theme-minimal
+deploy:
+  type: git
+  repository: https://github.com/hxf236386915/echo508ds.github.io.git
+  branch: master
