@@ -1,169 +1,62 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    
-    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+{% extends '_layout.swig' %}
+{% import '_macro/post-collapse.swig' as post_template %}
+{% import '_macro/sidebar.swig' as sidebar_template %}
 
-    
-    <meta name="author" content="John Doe">
-    
+{% block title %}{{ __('title.archive') }} | {{ config.title }}{% endblock %}
 
-    
+{% block page_class %}page-archive{% endblock %}
 
-    
+{% block content %}
 
-    <title>
-        
-        所有文章 |
-        
-        王腰果
-    </title>
+  {#####################}
+  {### ARCHIVE BLOCK ###}
+  {#####################}
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
 
-    
-<link rel="stylesheet" href="/stylesheets/index.min.css">
+      <span class="archive-page-counter">
+        {% set cheers %}
+        {% set posts_length = site.posts.length %}
+        {% if posts_length > 210 %} {% set cheers = 'excellent' %}
+          {% elif posts_length > 130 %} {% set cheers = 'great' %}
+          {% elif posts_length > 80 %} {% set cheers = 'good' %}
+          {% elif posts_length > 50 %} {% set cheers = 'nice' %}
+          {% elif posts_length > 30 %} {% set cheers = 'ok' %}
+        {% else %}
+          {% set cheers = 'um' %}
+        {% endif %}
+        {{ __('cheers.' + cheers) }}! {{ _p("counter.archive_posts", site.posts.length) }} {{ __('keep_on') }}
+      </span>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
-<body data-theme="white"
-      }
-        
->
-<span id="#TOP"></span>
-<div id="body-inner-container">
-    
-    <header id="page-masthead" style="background-image: url(/images/star.png)">
-        <div>
-            <a id="page-logo" href="/">
-                
-                <img id="logo" src="/images/logo.png" alt="logo">
-                
+      {% for post in page.posts %}
 
-                
-                example.com
-                
-            </a>
-            <nav id="site-nav">
-                <ul class="list-inline">
-                    
-                    
-                    <li><a href="/">首页</a></li>
-                    
-                    
-                    
-                    <li><a href="/archives">归档</a></li>
-                    
-                    
-                    
-                    <li><a href="/tags">标签</a></li>
-                    
-                    
-                    
-                    <li><a href="/about">关于</a></li>
-                    
-                    
-                </ul>
-            </nav>
-        </div>
-    </header>
+        {# Show year #}
+        {% set year %}
+        {% set post.year = date(post.date, 'YYYY') %}
 
-    <main id="page-main-container">
-        <div id="page-main-inner-wrap">
-            <div id="page-content">
-                <div id="page-title-header">
-                    
-                    <h1 id="page-title">
-                        
-                        所有文章
-                        
-                    </h1>
+        {% if post.year !== year %}
+          {% set year = post.year %}
+          <div class="collection-title">
+            <{% if theme.seo %}h2{% else %}h1{% endif %} class="archive-year" id="archive-year-{{ year }}">{{ year }}</{% if theme.seo %}h2{% else %}h1{% endif %}>
+          </div>
+        {% endif %}
+        {# endshow #}
 
-                    <p id="page-subtitle">
-                        
-                    </p>
-                    
-                </div>
-                <div id="page-article-list" data-content="共 2 篇文章">
-    
-    
+        {{ post_template.render(post) }}
 
-    
-    
-    
-        
-        
-        <section id="year-2021">
-        <h2>2021</h2>
-    
-    <article>
-        <h3><a href="/2021/03/27/hello-world/">Hello World</a></h3>
-        <ul class="post-meta list-inline">
-            <li>时间：<time>2021-03-27</time></li>
-            
-        </ul>
-    </article>
+      {% endfor %}
 
-    
+    </div>
+  </div>
+  {#########################}
+  {### END ARCHIVE BLOCK ###}
+  {#########################}
 
-    
+  {% include '_partials/pagination.swig' %}
 
-    
-    
-    
-    <article>
-        <h3><a href="/2021/03/27/hello-world1/">Hello World</a></h3>
-        <ul class="post-meta list-inline">
-            <li>时间：<time>2021-03-27</time></li>
-            
-        </ul>
-    </article>
+{% endblock %}
 
-    
-        </section>
-    
-
-    
-</div>
-
-            </div>
-        </div>
-    </main>
-
-    <footer id="page-mastfoot">
-        <p>
-            Powered by <a href="http://www.hexo.io" target="_blank">Hexo</a> |
-            <a href="https://github.com/geekwen/hexo-theme" target="_blank">Theme</a> by
-            <a href="http://geekwen.github.io" target="_blank">Geekwen</a> |
-            <a href="/atom.xml">RSS</a>
-        </p>
-
-        
-        <p>Since 2021</p>
-        
-    </footer>
-
-    <aside id="theme-selector">
-        <ul class="list-unstyled">
-            <li data-theme="white">
-                
-            </li>
-            <li data-theme="yellow">
-                
-            </li>
-            <li data-theme="dark">
-                
-            </li>
-            
-            <li data-type="back-to-top">
-                <a href="#TOP" id="back-to-top">TOP</a>
-            </li>
-            
-        </ul>
-    </aside>
-    
-</div>
-
-
-</body>
-</html>
+{% block sidebar %}
+  {{ sidebar_template.render(false) }}
+{% endblock %}
