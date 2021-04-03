@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>demo1</title>
+    <url>/2021/03/30/demo1/</url>
+    <content><![CDATA[<img src="/2021/03/30/demo1/demo.png" class="">
+
+]]></content>
+      <categories>
+        <category>machine learning</category>
+      </categories>
+      <tags>
+        <tag>wcy</tag>
+        <tag>test</tag>
+        <tag>aaa</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test1</title>
+    <url>/2021/03/30/test1/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>programming</category>
+        <category>machine learning</category>
+      </categories>
+      <tags>
+        <tag>wcy</tag>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hello</title>
+    <url>/2021/04/03/hello/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test2</title>
+    <url>/2021/03/30/test2/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>programming</category>
+        <category>machine learning</category>
+      </categories>
+      <tags>
+        <tag>wcy</tag>
+        <tag>test</tag>
+      </tags>
+  </entry>
+</search>
