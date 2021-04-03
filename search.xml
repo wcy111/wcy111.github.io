@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hello</title>
+    <url>/2021/04/03/hello/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ok</title>
+    <url>/2021/04/03/ok/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>study</category>
+        <category>programming</category>
+      </categories>
+      <tags>
+        <tag>ML</tag>
+        <tag>DS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>demo1</title>
     <url>/2021/03/30/demo1/</url>
     <content><![CDATA[<img src="/2021/03/30/demo1/demo.png" class="">
@@ -10,8 +31,8 @@
         <category>life</category>
       </categories>
       <tags>
-        <tag>DS</tag>
         <tag>ML</tag>
+        <tag>DS</tag>
       </tags>
   </entry>
   <entry>
@@ -28,14 +49,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hello</title>
-    <url>/2021/04/03/hello/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>test2</title>
     <url>/2021/03/30/test2/</url>
     <content><![CDATA[]]></content>
@@ -46,19 +59,6 @@
       <tags>
         <tag>wcy</tag>
         <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ok</title>
-    <url>/2021/04/03/ok/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>study</category>
-        <category>programming</category>
-      </categories>
-      <tags>
-        <tag>DS</tag>
-        <tag>ML</tag>
       </tags>
   </entry>
 </search>
