@@ -7,12 +7,11 @@
 
 ]]></content>
       <categories>
-        <category>machine learning</category>
+        <category>life</category>
       </categories>
       <tags>
-        <tag>wcy</tag>
-        <tag>test</tag>
-        <tag>aaa</tag>
+        <tag>DS</tag>
+        <tag>ML</tag>
       </tags>
   </entry>
   <entry>
@@ -47,6 +46,19 @@
       <tags>
         <tag>wcy</tag>
         <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ok</title>
+    <url>/2021/04/03/ok/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>study</category>
+        <category>programming</category>
+      </categories>
+      <tags>
+        <tag>DS</tag>
+        <tag>ML</tag>
       </tags>
   </entry>
 </search>
