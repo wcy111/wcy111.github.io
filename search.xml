@@ -1,64 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hello</title>
-    <url>/2021/04/03/hello/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ok</title>
-    <url>/2021/04/03/ok/</url>
-    <content><![CDATA[]]></content>
+    <title>神经网络中的数据表示</title>
+    <url>/2021/04/04/2021%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/</url>
+    <content><![CDATA[
+        <h1 id="神经网络中的数据表示"   >
+          <a href="#神经网络中的数据表示" class="heading-link"><i class="fas fa-link"></i></a><a href="#神经网络中的数据表示" class="headerlink" title="神经网络中的数据表示"></a>神经网络中的数据表示</h1>
+      <p>矩阵运算加块了神经网络的计算速度，而在应用中数据常常存储在多维Numpy数组中，其也被称为张量(tensor). 当前基本所有机器学习系统都使用张量作为数据结构，它对这个领域尤为的重要，以TensorFlow的命名就可窥见。</p>
+<img src="/2021/04/04/2021%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/image-20210306210342187.png" class="">
+<span id="more"></span>
+<p>张量这一概念的核心在与，它是数据容器。 其中矩阵就是二维张量，张量事实上是矩阵向任意维度的推广。（张量的维度(dimension)常被称作轴(axis)，张量轴的个数被称为阶（rank））</p>
+<hr>
+
+        <h1 id="标量（scalar）0D张量"   >
+          <a href="#标量（scalar）0D张量" class="heading-link"><i class="fas fa-link"></i></a><a href="#标量（scalar）0D张量" class="headerlink" title="标量（scalar）0D张量"></a>标量（scalar）0D张量</h1>
+      <p> Numpy中，一个 float32和float64的数字就是一个0D张量。其可用ndim属性来查看。0D张量的ndim==0,如下图所示。</p>
+<img src="/2021/04/04/2021%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/image-20210306204113139.png" class="">
+
+
+
+        <h1 id="向量（vector）1D张量"   >
+          <a href="#向量（vector）1D张量" class="heading-link"><i class="fas fa-link"></i></a><a href="#向量（vector）1D张量" class="headerlink" title="向量（vector）1D张量"></a>向量（vector）1D张量</h1>
+      <p>很多数据中标签是存储在1D张量中的。其形式如下</p>
+<img src="/2021/04/04/2021%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/image-20210306204514761.png" class="">
+
+
+<p>这个向量中有6个元素，被称为6D向量，易与张量的阶数混淆。事实上6D向量只有一个轴，沿着轴有6个维度(dimensionality)。6D张量才有6个轴。其中，维度既可以表示某个轴上的元素个数，也可以表示张量中的轴数。后者更准确的叫法应该是6阶张量。但是6D张量这种写法常见。</p>
+
+        <h1 id="矩阵-matrix-2D张量"   >
+          <a href="#矩阵-matrix-2D张量" class="heading-link"><i class="fas fa-link"></i></a><a href="#矩阵-matrix-2D张量" class="headerlink" title="矩阵(matrix) 2D张量"></a>矩阵(matrix) 2D张量</h1>
+      <p>向量组成的数组叫矩阵。矩阵有两个轴，通常称为行（row）和列(column)，其形式如下</p>
+<img src="/2021/04/04/2021%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/image-20210306210108337.png" class="">
+<p>3X2的矩阵</p>
+
+        <h1 id="3D张量"   >
+          <a href="#3D张量" class="heading-link"><i class="fas fa-link"></i></a><a href="#3D张量" class="headerlink" title="3D张量"></a>3D张量</h1>
+      <img src="/2021/04/04/2021%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/image-20210306210342187.png" class="">
+
+<p>以CIFAR10数据集为例</p>
+<img src="/2021/04/04/2021%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/image-20210306210616667.png" class="">
+
+<p>3D张量分别存储 高度 宽度和颜色深度，其大小为32*32像素，颜色深度维数为3，分别对应RGB三个颜色通道。</p>
+<hr>
+
+        <h1 id="4D张量"   >
+          <a href="#4D张量" class="heading-link"><i class="fas fa-link"></i></a><a href="#4D张量" class="headerlink" title="4D张量"></a>4D张量</h1>
+      <p>关于4D张量：当许多图片累加起来时3D张量就不足以存储，需要增加一个拥有N维的轴来存储N个图片样本。</p>
+<hr>
+
+        <h1 id="5D张量"   >
+          <a href="#5D张量" class="heading-link"><i class="fas fa-link"></i></a><a href="#5D张量" class="headerlink" title="5D张量"></a>5D张量</h1>
+      <p>关于5D张量：其中视频数据可以被看做事5D张量的少数数据类型之一，视频可以被看做由一系列帧（Frame）构成。每一个帧可以保存在一个形状为（height,width,color_depth）的3D向量中，一系列帧可以保存在(frames,height,width,color_depth)的4D张量中，不同视频数据组成的批量可以保存在5D张量中(samples,frames,height,width,color_depth)</p>
+]]></content>
       <categories>
-        <category>study</category>
-        <category>programming</category>
+        <category>Programming</category>
       </categories>
       <tags>
-        <tag>ML</tag>
-        <tag>DS</tag>
+        <tag>Deep Learning</tag>
+        <tag>Data Science</tag>
       </tags>
   </entry>
   <entry>
     <title>demo1</title>
     <url>/2021/03/30/demo1/</url>
-    <content><![CDATA[<img src="/2021/03/30/demo1/demo.png" class="">
-
-]]></content>
-      <categories>
-        <category>life</category>
-      </categories>
-      <tags>
-        <tag>ML</tag>
-        <tag>DS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>test1</title>
-    <url>/2021/03/30/test1/</url>
     <content><![CDATA[]]></content>
-      <categories>
-        <category>programming</category>
-        <category>machine learning</category>
-      </categories>
-      <tags>
-        <tag>wcy</tag>
-        <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>test2</title>
-    <url>/2021/03/30/test2/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>programming</category>
-        <category>machine learning</category>
-      </categories>
-      <tags>
-        <tag>wcy</tag>
-        <tag>test</tag>
-      </tags>
   </entry>
 </search>
