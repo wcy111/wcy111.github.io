@@ -99,4 +99,18 @@
         <tag>Optimisation</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Interpretable Machine Learning</title>
+    <url>/2021/04/05/Interpretable%20Machine%20Learning/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Machine learning</category>
+        <category>Interpretable Machine Learning</category>
+      </categories>
+      <tags>
+        <tag>Machine learning</tag>
+        <tag>Interpretable Machine Learning</tag>
+        <tag>LIME</tag>
+      </tags>
+  </entry>
 </search>
