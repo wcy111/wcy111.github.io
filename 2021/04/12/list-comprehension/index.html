@@ -7,7 +7,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://wcy111.github.io/2021/04/12/list-comprehension/Telephone-keypad.png">
 <meta property="article:published_time" content="2021-04-11T16:19:37.000Z">
-<meta property="article:modified_time" content="2021-04-14T08:27:03.883Z">
+<meta property="article:modified_time" content="2021-04-14T08:43:50.624Z">
 <meta property="article:author" content="Yaoguo Wang">
 <meta property="article:tag" content="LeetCode">
 <meta property="article:tag" content="Python">
@@ -100,18 +100,18 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
         <h2 id="循环1"   >
           <a href="#循环1" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#循环1"></a> 循环1</h2>
       
-<p>首先第一层的循环是对于ans也就是我们target list进行的，变量c存储每次迭代的对象。</p>
+<p>首先第一层的循环是对于ans也就是我们target list进行的，变量c存储当前遍历元素。</p>
 
         <h2 id="循环2"   >
           <a href="#循环2" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#循环2"></a> 循环2</h2>
       
-<p>然后第二层循环是对于 len(chars[i])进行的它返回的是digit中某个数字对应的可能字符个数（如图数组2有3个可能对应的字母，而7和9有4个), 该循环迭代对象j返回的是数字对应字符的索引。</p>
+<p>然后第二层循环是对于 len(chars[i])进行的它返回的是digit中某个数字对应的可能字符个数（如图数字2有3个对应的字母，而数字7和9有4个), 变量j存储当前遍历索引。</p>
 <hr />
 
         <h2 id="表达式"   >
           <a href="#表达式" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#表达式"></a> 表达式</h2>
       
-<p><code>c+chars[i][j]</code>chars[i]表示的是digits中数字的索引，j表示的是该数字对应的可能的字母的索引。因此，思考下就能得知，每轮for循环实际上target list中存放的是前i个数字可能的字母组合。列表解析式所实现的双重循环在增加target list中元素的个数的同时通过expression增加元素的长度。</p>
+<p><code>c+chars[i][j]</code>chars[i]表示的是digits中数字的索引，j表示的是该数字对应的可能的字母的索引（对于digits’27’,当i=0的时候，j会从0遍历到2;当i=7的时候，j会从0遍历3）。因此，思考下就能得知，实际上，每轮for循环target list中存放的是前i+1个数字的可能的字母组合。列表解析式所实现的双重循环在增加target list中元素的个数的同时通过expression增加元素的长度。</p>
 </div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ END ------</div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://wcy111.github.io/source/tags/LeetCode/">LeetCode</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://wcy111.github.io/source/tags/Python/">Python</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://wcy111.github.io/source/tags/List-comprehension/">List comprehension</a></span></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/2021/04/07/%E5%8F%8C%E6%8C%87%E9%92%88%E7%B1%BB%E5%9E%8B%E9%A2%98%E8%A7%A3%EF%BC%88%E4%B8%80%EF%BC%89/"><span class="paginator-prev__text">双指针类型题解（一）</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">Catalog</span><span class="sidebar-nav-ov">Overview</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%95%E4%BE%8B"><span class="toc-number">1.</span> <span class="toc-text">
            引例</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Elist-comprehension"><span class="toc-number">1.1.</span> <span class="toc-text">
            关于List comprehension</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#list-comprehension-%E7%94%A8%E6%B3%95"><span class="toc-number">1.2.</span> <span class="toc-text">
