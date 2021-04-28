@@ -6,7 +6,7 @@
 <meta property="og:description" content="最近有机会使用学院的分配给实验室的服务器（Linux比较流行的发行版Ubuntu），正好跑实验需要，于是从零开始部署用于机器学习，深度学习的环境。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-04-27T14:16:28.000Z">
-<meta property="article:modified_time" content="2021-04-28T06:59:09.355Z">
+<meta property="article:modified_time" content="2021-04-28T07:16:35.392Z">
 <meta property="article:author" content="Yaoguo Wang">
 <meta property="article:tag" content="Linux">
 <meta property="article:tag" content="Server">
@@ -81,7 +81,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 <p>操作系统：<strong>Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-128-generic x86_64)</strong></p>
 <p>每个团队都分配到了账号，管理员在创建目录的时候给每个团队建立了一个主目录，通常在/home下，团队对自己主目录的文件拥有所有权，可以用于进行各种操作。</p>
 <figure class="highlight shell"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh teamn@x.x.x.x</span><br></pre></td></tr></table></div></figure>
-<p>这一步是通过ssh远程连接服务器，其中x.x.x.x是服务器的地址，teamn则是分配到的账号。紧接着会让你输入密码</p>
+<p>这一步是通过ssh远程连接服务器，其中x.x.x.x是服务器的地址，teamn则是分配到的账号。紧接着会让你输入密码(关于ssh的详细信息可参考<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html" >1</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
 <figure class="highlight shell"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">teamn@x.x.x.x&#x27;s password: </span><br></pre></td></tr></table></div></figure>
 <p>这里是看不见输入的密码长度的，只需要在键盘上盲打然后按回车就行。密码正确后会显示登录服务器名和账号。可以输入命令<strong>ls</strong>来看当前目录的所有文件，连接时我们处于/home/teamn的用户主目录，我们也可以使用命令<strong>cd …<strong>返回上级目录或者</strong>cd file_name</strong> (file_name当前目录下某个文件夹的名字)来进入到子目录中。</p>
 <figure class="highlight shell"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvidia-smi</span><br></pre></td></tr></table></div></figure>
@@ -130,8 +130,22 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
         <h2 id="四-本地连接服务器端jupyter-notebook"   >
           <a href="#四-本地连接服务器端jupyter-notebook" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#四-本地连接服务器端jupyter-notebook"></a> 四、本地连接服务器端Jupyter notebook</h2>
       
+<p>这里简述实现流程，具体内容也可参考官方文档<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://jupyter-notebook.readthedocs.io/en/stable/public_server.html" >3</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+
+        <h3 id="-在服务器端开启jupyter-server"   >
+          <a href="#-在服务器端开启jupyter-server" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#-在服务器端开启jupyter-server"></a> - 在服务器端开启jupyter server</h3>
+      
+<p>bash输入</p>
+<p><code>jupyter notebook</code></p>
+<p>默认的端口为8888，但是有时候已经有人使用了该端口，为了避免冲突可以指定开启端口号</p>
+<figure class="highlight shell"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter notebook --port YYYY(四位任意)</span><br></pre></td></tr></table></div></figure>
+<p>如果在本机这样操作会直接在浏览器跳出jupyter web页面，在服务器端因为没有GUI并且在config中设置了 no browser，因此  bash 会提示server 运行在B端口。接下来我们就可以放着先不管了。</p>
+
+        <h3 id="-创建本地到服务器端的映射"   >
+          <a href="#-创建本地到服务器端的映射" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#-创建本地到服务器端的映射"></a> -创建本地到服务器端的映射</h3>
+      
 <p>事实上也可以改jupyter config的一些配置，直接远程访问该jupyter（remote address:YYYY），这里由于某些原因我失败了暂时选择了如上方法</p>
-<p><code>ssh -N -f -L localhost:XXXX:localhost:YYYY team6@192.168.xx.xx</code></p>
+<p><code>ssh -N -f -L localhost:XXXX:localhost:YYYY team6@192.168.156.31</code></p>
 <p>-N 告诉SSH没有命令要被远程执行</p>
 <p>-f 告诉SSH在后台执行</p>
 <p>-L 指定port forwarding的配置 远程端口是YYYY 本地是XXXX</p>
@@ -140,8 +154,13 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 <p>随后打开任意浏览器地址栏输入localhost:XXXX并输入密码 xxxx（这是我之前在jupyter config里设置的）,即可进入 。</p>
 <p>这里如果我们想在jupyter上运行Shell命令，只需要在代码运行的cell前面加! ,   如果需要交互 可以在末尾加–yes 或者-- yes *</p>
 
-        <h2 id="reference"   >
-          <a href="#reference" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#reference"></a> Reference</h2>
+        <h2 id="五-上传下载文件"   >
+          <a href="#五-上传下载文件" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#五-上传下载文件"></a> 五、上传下载文件</h2>
+      
+<p>如果是使用了远程终端软件，图形界面内自备了可视化接口就可方便上传下载文件。在bash中我们可以使用shell命令scp进行操作。</p>
+
+        <h2 id="references"   >
+          <a href="#references" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#references"></a> References</h2>
       
 <p>[1]<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html" >https://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
 <p>[2]<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands" >https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
@@ -153,8 +172,11 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
            -虚拟环境简单介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-%E5%88%9B%E5%BB%BA%E7%8E%AF%E5%A2%83"><span class="toc-number">3.2.</span> <span class="toc-text">
            -创建环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">3.3.</span> <span class="toc-text">
            -常用命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B-%E6%9C%AC%E5%9C%B0%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AFjupyter-notebook"><span class="toc-number">4.</span> <span class="toc-text">
-           四、本地连接服务器端Jupyter notebook</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#reference"><span class="toc-number">5.</span> <span class="toc-text">
-           Reference</span></a></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/icon.png" alt="avatar"></div><p class="sidebar-ov-author__text">Lost stars</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com//wcy111" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">8</div><div class="sidebar-ov-state-item__name">Archives</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">12</div><div class="sidebar-ov-state-item__name">Categories</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">17</div><div class="sidebar-ov-state-item__name">Tags</div></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">You have read </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Yaoguo Wang</span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v5.4.0</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div><div></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="Search for Posts (Support multiple keywords)"></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script>function initSearch() {
+           四、本地连接服务器端Jupyter notebook</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#-%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E5%BC%80%E5%90%AFjupyter-server"><span class="toc-number">4.1.</span> <span class="toc-text">
+           - 在服务器端开启jupyter server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-%E5%88%9B%E5%BB%BA%E6%9C%AC%E5%9C%B0%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E7%9A%84%E6%98%A0%E5%B0%84"><span class="toc-number">4.2.</span> <span class="toc-text">
+           -创建本地到服务器端的映射</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94-%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6"><span class="toc-number">5.</span> <span class="toc-text">
+           五、上传下载文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#references"><span class="toc-number">6.</span> <span class="toc-text">
+           References</span></a></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/icon.png" alt="avatar"></div><p class="sidebar-ov-author__text">Lost stars</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com//wcy111" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">8</div><div class="sidebar-ov-state-item__name">Archives</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">12</div><div class="sidebar-ov-state-item__name">Categories</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">17</div><div class="sidebar-ov-state-item__name">Tags</div></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">You have read </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Yaoguo Wang</span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v5.4.0</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div><div></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="Search for Posts (Support multiple keywords)"></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script>function initSearch() {
   var isXML = true;
   var search_path = 'search.json';
 
