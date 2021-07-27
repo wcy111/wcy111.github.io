@@ -917,7 +917,7 @@ kbd {
   z-index: 0;
   width: 100%;
   height: 100%;
-  background: url("/images/avatar.png") no-repeat center/cover;
+  background: url("https://www.pixelstalk.net/wp-content/uploads/2015/12/Black-white-flowers-pictures-wallpaper.jpg") no-repeat center/cover;
 }
 .header-banner::before {
   content: '';
@@ -955,12 +955,6 @@ kbd {
   font-weight: 400;
   color: #f5f6f7;
 }
-.footer__icon {
-  display: inline-block;
-  margin: 0 0.4rem;
-  font-size: 1em;
-  color: #f00;
-}
 .footer-inner {
   position: relative;
   padding: 1rem;
@@ -968,8 +962,6 @@ kbd {
   text-align: center;
   color: #f5f6f7;
   background-color: #2d2e30;
-  z-index: 0;
-  background: url("/images/bk_image.png") no-repeat center/cover;
 }
 .footer a {
   color: #c20808;
