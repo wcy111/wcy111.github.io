@@ -235,20 +235,6 @@
   </url>
   
   <url>
-    <loc>https://wcy111.github.io/source/tags/Life/</loc>
-    <lastmod>2021-08-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wcy111.github.io/source/tags/Friendship/</loc>
-    <lastmod>2021-08-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wcy111.github.io/source/tags/Double-pointer/</loc>
     <lastmod>2021-08-04</lastmod>
     <changefreq>daily</changefreq>
@@ -257,6 +243,20 @@
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Link-list/</loc>
+    <lastmod>2021-08-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wcy111.github.io/source/tags/Life/</loc>
+    <lastmod>2021-08-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wcy111.github.io/source/tags/Friendship/</loc>
     <lastmod>2021-08-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -342,14 +342,14 @@
   </url>
   
   <url>
-    <loc>https://wcy111.github.io/categories/Life/</loc>
+    <loc>https://wcy111.github.io/categories/Programming/LeetCode/</loc>
     <lastmod>2021-08-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://wcy111.github.io/categories/Programming/LeetCode/</loc>
+    <loc>https://wcy111.github.io/categories/Life/</loc>
     <lastmod>2021-08-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -377,14 +377,14 @@
   </url>
   
   <url>
-    <loc>https://wcy111.github.io/categories/Life/Record/</loc>
+    <loc>https://wcy111.github.io/categories/Programming/LeetCode/Double-pointer/</loc>
     <lastmod>2021-08-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://wcy111.github.io/categories/Programming/LeetCode/Double-pointer/</loc>
+    <loc>https://wcy111.github.io/categories/Life/Record/</loc>
     <lastmod>2021-08-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
