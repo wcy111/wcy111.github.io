@@ -2092,6 +2092,9 @@ kbd {
 .back2top__icon:hover {
   color: #fc6423;
 }
+a.fancybox {
+  cursor: zoom-in;
+}
 .zoomimg-mask {
   position: fixed;
   top: 0;
@@ -2277,7 +2280,8 @@ kbd {
   word-break: break-all;
 }
 .gallery img {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  width: 220px;
 }
 .exturl__icon {
   margin: 0 0.1em 0 0.3em;
@@ -2831,6 +2835,9 @@ html.nightmode {
   .post-list .post {
     margin: 0 0 0.8rem;
     padding: 0.8rem;
+  }
+  .gallery img {
+    width: 100%;
   }
   .friends-plugin__item {
     margin: 0;
