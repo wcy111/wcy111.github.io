@@ -190,13 +190,6 @@
     
   </url>
   
-  <url>
-    <loc>https://wcy111.github.io/2021/04/04/2021%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA/</loc>
-    
-    <lastmod>2021-04-05</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://wcy111.github.io/</loc>
@@ -222,20 +215,6 @@
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Life/</loc>
-    <lastmod>2022-01-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wcy111.github.io/source/tags/Deep-Learning/</loc>
-    <lastmod>2022-01-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wcy111.github.io/source/tags/Data-Science/</loc>
     <lastmod>2022-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
