@@ -23,20 +23,6 @@
   </url>
   
   <url>
-    <loc>https://wcy111.github.io/2021/10/29/Estimation%20of%20random%20vectors/</loc>
-    
-    <lastmod>2021-10-30</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wcy111.github.io/2021/10/05/SVM-SaVe-Me/</loc>
-    
-    <lastmod>2021-10-30</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://wcy111.github.io/2021/10/08/Transformations-functions/</loc>
     
     <lastmod>2021-10-30</lastmod>
@@ -73,13 +59,6 @@
   
   <url>
     <loc>https://wcy111.github.io/about/index.html</loc>
-    
-    <lastmod>2021-10-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wcy111.github.io/2021/10/07/CD%20Coordinate%20Descent/</loc>
     
     <lastmod>2021-10-07</lastmod>
     
@@ -166,13 +145,6 @@
     <loc>https://wcy111.github.io/2021/06/16/Python%E4%B8%AD%E7%9A%84%E5%BC%95%E7%94%A8/</loc>
     
     <lastmod>2021-07-05</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wcy111.github.io/2021/04/06/%E4%BA%9B%E8%AE%B8%E8%AE%B0%E5%BD%95%E5%92%8C%E6%84%9F%E6%82%9F/</loc>
-    
-    <lastmod>2021-05-22</lastmod>
     
   </url>
   
@@ -277,20 +249,6 @@
   </url>
   
   <url>
-    <loc>https://wcy111.github.io/source/tags/Optimization/</loc>
-    <lastmod>2022-01-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wcy111.github.io/source/tags/CD/</loc>
-    <lastmod>2022-01-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wcy111.github.io/source/tags/Math/</loc>
     <lastmod>2022-01-24</lastmod>
     <changefreq>daily</changefreq>
@@ -361,13 +319,6 @@
   </url>
   
   <url>
-    <loc>https://wcy111.github.io/source/tags/SVM/</loc>
-    <lastmod>2022-01-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wcy111.github.io/source/tags/List-comprehension/</loc>
     <lastmod>2022-01-24</lastmod>
     <changefreq>daily</changefreq>
@@ -376,13 +327,6 @@
   
   <url>
     <loc>https://wcy111.github.io/source/tags/LeetCode/</loc>
-    <lastmod>2022-01-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wcy111.github.io/source/tags/Friendship/</loc>
     <lastmod>2022-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -510,21 +454,7 @@
   </url>
   
   <url>
-    <loc>https://wcy111.github.io/categories/Machine-learning/SVM/</loc>
-    <lastmod>2022-01-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wcy111.github.io/categories/Math/Probability-and-Random-Processes/</loc>
-    <lastmod>2022-01-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wcy111.github.io/categories/Math/Optimization/</loc>
     <lastmod>2022-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
