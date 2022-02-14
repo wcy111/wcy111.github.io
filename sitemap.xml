@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wcy111.github.io/2022/02/03/Convergence%20of%20GD/</loc>
+    
+    <lastmod>2022-02-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wcy111.github.io/2022/02/13/Docker/</loc>
+    
+    <lastmod>2022-02-14</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wcy111.github.io/2022/01/24/Blog%E5%8F%88%E5%BC%80%E5%BC%A0%E4%BA%86/</loc>
     
     <lastmod>2022-02-03</lastmod>
@@ -228,7 +242,21 @@
   </url>
   
   <url>
+    <loc>https://wcy111.github.io/source/tags/Machine-Learning/</loc>
+    <lastmod>2022-02-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wcy111.github.io/source/tags/Life/</loc>
+    <lastmod>2022-02-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wcy111.github.io/source/tags/Optimization/</loc>
     <lastmod>2022-02-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -402,6 +430,20 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://wcy111.github.io/source/tags/Gradient-decent/</loc>
+    <lastmod>2022-02-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wcy111.github.io/source/tags/Docker/</loc>
+    <lastmod>2022-02-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -455,6 +497,13 @@
   
   <url>
     <loc>https://wcy111.github.io/categories/Math/Probability-and-Random-Processes/</loc>
+    <lastmod>2022-02-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wcy111.github.io/categories/Math/Optimization/</loc>
     <lastmod>2022-02-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
