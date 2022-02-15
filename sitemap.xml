@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wcy111.github.io/2022/02/15/Lipschitz-Continuity-basics/</loc>
+    
+    <lastmod>2022-02-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wcy111.github.io/2022/02/15/Norm-basic/</loc>
     
     <lastmod>2022-02-15</lastmod>
@@ -458,6 +465,13 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://wcy111.github.io/source/tags/Lipschitz/</loc>
+    <lastmod>2022-02-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -588,6 +602,13 @@
   
   <url>
     <loc>https://wcy111.github.io/categories/Math/Optimization/Norm/</loc>
+    <lastmod>2022-02-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wcy111.github.io/categories/Math/Optimization/Lipschitz/</loc>
     <lastmod>2022-02-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
