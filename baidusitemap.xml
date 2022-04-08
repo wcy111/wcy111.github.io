@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://wcy111.github.io/2022/04/07/Smile/</loc>
+    <lastmod>2022-04-08</lastmod>
+  </url>
+  <url>
+    <loc>https://wcy111.github.io/2022/02/16/Proximal-Gradient-Methods/</loc>
+    <lastmod>2022-02-25</lastmod>
+  </url>
+  <url>
     <loc>https://wcy111.github.io/2022/02/15/Lipschitz-Continuity-basics/</loc>
     <lastmod>2022-02-15</lastmod>
   </url>
