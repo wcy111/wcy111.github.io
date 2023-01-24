@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wcy111.github.io/2023/01/24/%E9%98%85%E8%AF%BB%E5%88%86%E4%BA%AB-%E8%B4%B0/</loc>
+    
+    <lastmod>2023-01-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wcy111.github.io/2022/11/29/Pose-Estimation/</loc>
+    
+    <lastmod>2022-11-30</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wcy111.github.io/2022/11/19/%E8%BF%8E%E7%9D%80%E9%A3%8E/</loc>
     
     <lastmod>2022-11-19</lastmod>
@@ -172,7 +186,7 @@
 
   <url>
     <loc>https://wcy111.github.io/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -180,161 +194,168 @@
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Machine-learning/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Interpretable-Machine-Learning/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Machine-Learning/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Life/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Optimization/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Math/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Probability-and-Random-Processes/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Conditional-PMF-Expectation/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/LIME/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Kernel-trick/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Kernel-logistic-regression/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/feature-map/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Python/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Optimisation/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Linux/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Meaning/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Poem/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Docker/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Norm/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Lipschitz/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Non-smooth-optimization/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Proximal-Gradient-Methods/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/source/tags/Reading/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wcy111.github.io/source/tags/Computer-vision/</loc>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -343,98 +364,105 @@
   
   <url>
     <loc>https://wcy111.github.io/categories/Machine-learning/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/categories/Machine-learning/Interpretable-Machine-Learning/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/categories/Life/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/categories/Math/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/categories/Machine-learning/Kernel-trick/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/categories/Math/Probability-and-Random-Processes/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/categories/Math/Optimization/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/categories/Life/Record/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/categories/Linux/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/categories/Life/Poem/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/categories/Linux/Server/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/categories/Math/Optimization/Norm/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/categories/Math/Optimization/Lipschitz/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://wcy111.github.io/categories/Math/Optimization/Non-smooth-optimization/</loc>
-    <lastmod>2022-11-19</lastmod>
+    <lastmod>2023-01-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wcy111.github.io/categories/Life/Reading/</loc>
+    <lastmod>2023-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
